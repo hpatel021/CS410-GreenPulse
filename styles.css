@@ -71,12 +71,6 @@ nav ul li a {
 }
 
 /* Heading styles */
-h1 {
-    color: #000000; /* Dark green color for the title */
-    text-align: center; /* Center the title */
-    font-size: 36px; /* Larger font size for the title */
-}
-
 h2, h3 {
     color: #333; /* Dark color for headings */
     text-align: center; /* Center the headings */
@@ -113,5 +107,5 @@ body::before {
 footer {
     text-align: center;
     padding: 10px; /* Add padding for spacing */
-    color: #333 /* White text color for better readability */
+    color: #333 /* Brown text color for better readability */
 }
