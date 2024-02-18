@@ -4,8 +4,8 @@
   - [Theme](https://github.com/pages-themes/midnight?tab=readme-ov-file#usage)
 
 ## HTML & CSS Reference
-  - [HTML](https://www.codecademy.com/resources/docs/html)
-  - [CSS](https://www.codecademy.com/resources/docs/css)
+  - [HTML](https://www.w3schools.com/html/default.asp)
+  - [CSS](https://www.w3schools.com/css/default.asp)
 
 ## Navigation
   -  [Presentations](./presentations.md)
