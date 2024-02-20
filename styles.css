@@ -22,11 +22,19 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+/* Update the button styles */
+nav ul li button {
+    font-size: 20px; /* Adjust the font size for the buttons */
+    padding: 10px 20px; /* Adjust the padding for the buttons (top/bottom, left/right) */
+    border-radius: 30px; /* Add rounded corners to the buttons */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
 
-/* Add hover effects to navigation links */
-nav ul li a:hover {
-    color: #7bff00; /* Change text color on hover */
-
+/* Add a button hover effect */
+nav ul li button:hover {
+    background-color: #00fbffdf; /* Background color on hover */
+    color: #000; /* Text color on hover */
+    box-shadow: 0 0 10px rgba(123, 255, 0, 0.8); /* Glow effect on hover */
 }
 
 nav ul li {
@@ -37,6 +45,7 @@ nav ul li {
 nav ul li a {
     font-size: 30px; /* Adjust the font size for navigation links */
 }
+
 
 /* Add a simple rotation animation to the logo */
 .logo img {
