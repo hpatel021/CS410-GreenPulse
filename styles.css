@@ -113,6 +113,22 @@ nav ul li a {
     transform: translate(-50%, -50%);
 }
 
+/* Team Member hover effect */
+.team-member:hover {
+    transform: scale(1.06); /* Enlarge the team member card on hover */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+    box-shadow: 0 0 10px rgb(254, 254, 254); /* White shadow on hover */
+}
+/* Team Member color transition */
+.team-member h3 {
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+/* Team Member color change on hover */
+.team-member:hover h3 {
+    color: #ffbb00; /* Color on hover */
+}
+
 /* Heading styles */
 h2, h3 {
     color: #333; /* Dark color for headings */
