@@ -22,12 +22,15 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-/* Update the button styles */
+/* Add a button styles */
 nav ul li button {
-    font-size: 20px; /* Adjust the font size for the buttons */
-    padding: 10px 20px; /* Adjust the padding for the buttons (top/bottom, left/right) */
-    border-radius: 30px; /* Add rounded corners to the buttons */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    font-size: 18px; /* Font size for the buttons */
+    padding: 10px 15px; /* Padding for the buttons (top/bottom, left/right) */
+    border-radius: 20px; /* Rounded corners to the buttons */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    background-color: #008000; /* Darker green background color */
+    border: none;
+    color: #fff; /* Color */
 }
 
 /* Add a button hover effect */
