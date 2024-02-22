@@ -1,12 +1,12 @@
 # Emerald - GreenPulse Project
-    Welcome to the Emerald - GreenPulse project repository! This `README.md` serves as a guide to help you navigate and understand our project.
+Welcome to the Emerald - GreenPulse project repository! This `README.md` serves as a guide to help you navigate and understand our project.
     
 ## Project Links
   - [GitHub Pages](https://hpatel021.github.io/CS410-GreenPulse/)
   - [Theme](https://github.com/pages-themes/midnight?tab=readme-ov-file#usage)
 
 ## Overview
-    The Emerald - GreenPulse project addresses environmental concerns by offering a sustainable living through the GreenPulse smartphone application.
+The Emerald - GreenPulse project addresses environmental concerns by offering a sustainable living through the GreenPulse smartphone application.
 
 ## Navigation
   - Explore our [Presentations](./presentations.md) for detailed insights into the project.
