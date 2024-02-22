@@ -1,3 +1,7 @@
+<div align="center">
+<img src="images/Logo8.png" width="100"/>
+</div>
+
 # Emerald - GreenPulse Project
 Welcome to the Emerald - GreenPulse project repository! This `README.md` serves as a guide to help you navigate and understand our project.
     
