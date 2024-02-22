@@ -15,10 +15,10 @@
                 <button data-target ="home">Home</button></a></li>
             
             <li><a href="#societal">
-                    <button data-target ="societal">Problem</button></a></li>
+                <button data-target ="societal">Problem</button></a></li>
 
             <li><a href="#solution">
-                        <button data-target="solution">Solution</button></a></li>
+                <button data-target="solution">Solution</button></a></li>
 
             <li><a href="#presentations">
                 <button data-target="presentations">Presentations</button></a></li>
@@ -37,18 +37,31 @@
             function hideAllSections() {
                 document.querySelectorAll('.content-section').forEach(function (section) {
                     section.style.display = 'none';
-            });
-        }
+                });
+            }
+
             // Function to show the targeted section
             function showSection(id) {
                 const section = document.getElementById(id);
                 if (section) {
                     section.style.display = '';
-            }
-        }      
+                }
+            }   
+
+            // Function to show/hide back to homepage button
+            function BackToHomepage(currentSectionId) {
+                const backToHomeButton = document.getElementById('back-to-home');
+                if (currentSectionId == 'home') {
+                    backToHomeButton.style.display = "none";
+                } else {
+                    backToHomeButton.style.display = '';
+                }
+            }     
+
             // Initialize by hiding all sections except the first one
             hideAllSections();
             showSection('home'); // Show 'home' section by default on page load
+            BackToHomepage('home');
       
             // Add click event listener to each button 
             navButtons.forEach(function (button) {
@@ -56,7 +69,16 @@
                     const targetId = this.getAttribute('data-target');
                     hideAllSections();
                     showSection(targetId);
+                    BackToHomepage(targetId);
                 });
+            });
+            
+            // Handle "Back to Homepage" button click
+            const backToHomeButton = document.getElementById('back-to-home');
+            backToHomeButton.addEventListener('click', function () {
+                hideAllSections();
+                showSection('home');
+                BackToHomepage('home');
             });
         });
     </script>
@@ -66,7 +88,8 @@
         <h2>Welcome to Emerald - GreenPulse</h2>
         <h2>Ready to Dive In?</h2>
         <p>Explore our societal problem, discover our solution, 
-            view presentations, and meet our team members!</p>
+            view presentations, and meet our team members!
+        </p>
     </section>
 
     <!-- Societal Problem Section -->
@@ -81,7 +104,7 @@
             Recent surveys have observed that over 85% of participants have made 
             changes in the last 5 years to their purchase habits 
             (Global Sustainability Study 2021: Initial insights). 
-            </p>
+        </p>
     </section>
 
     <!-- Solution Section -->
@@ -93,7 +116,7 @@
             reduce their carbon footprint, and actively participate in the eco-conscious movement. 
 
             GreenPulse provides a convenient tool for promoting sustainability in everyday life.
-            </p>
+        </p>
     </section>
 
 
@@ -121,7 +144,7 @@
             <!-- Member 1 -->
             <div class="team-member">
                 <div class="image-wrapper">
-                    <img src="images/member1.jpg" alt="Aria Ashby">
+                    <img src="images/member1.jpg">
                 </div>
                 <h3>Aria Ashby (she/her)</h3>
                 <h4>Software Developer</h4>
@@ -133,7 +156,7 @@
             <!-- Member 2 -->
             <div class="team-member">
                 <div class="image-wrapper">
-                    <img src="images/member2.jpg" alt="Dima Bochkarev">
+                    <img src="images/member2.jpg">
                 </div>
                 <h3>Dima Bochkarev</h3>
                 <h4>Software Developer</h4>
@@ -145,7 +168,7 @@
             <!-- Member 3 -->
             <div class="team-member">
                 <div class="image-wrapper">
-                    <img src="images/member3.jpg" alt="Victory Chuma">
+                    <img src="images/member3.jpg">
                 </div>
                 <h3>Victory Chuma</h3>
                 <p>Victory is a dedicated team worker and aspires to use his degrees in the data/security analytics field. 
@@ -155,7 +178,7 @@
             <!-- Member 4 -->
             <div class="team-member">
                 <div class="image-wrapper">
-                    <img src="images/member4.jpg" alt="Harsh Patel">
+                    <img src="images/member4.jpg">
                 </div>
                 <h3>Harsh Patel</h3>
                 <h4>Front-End Developer</h4>
@@ -167,7 +190,7 @@
             <!-- Member 5 -->
             <div class="team-member">
                 <div class="image-wrapper">
-                    <img src="images/member5.jpg" alt="Holadem Sildain">
+                    <img src="images/member5.jpg">
                 </div>
                 <h3>Holadem Sildain</h3>
                 <p>Holadem is a dynamic individual who actively pursues personal development and enlightenment, while exploring different types 
@@ -180,6 +203,11 @@
     <!-- Footer Section -->
     <footer>
         CS410 - Team Emerald
+        <div class="back-to-home" id="back-to-home">
+            <a href="#home">
+                <button>Back to Homepage</button>
+            </a>
+        </div>      
     </footer>
     
 </body>
