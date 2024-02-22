@@ -15,11 +15,12 @@ The Emerald - GreenPulse project addresses environmental concerns by offering a 
 ## Navigation
   - Explore our [Presentations](./presentations.md) for detailed insights into the project.
 
-## HTML & CSS Reference
+## Reference
 For those interested in the technologies we've used, check out these references:
   - [HTML](https://www.w3schools.com/html/default.asp)
   - [CSS](https://www.w3schools.com/css/default.asp)
   - [JavaScript](https://www.w3schools.com/js/js_whereto.asp)
+  - [Color Contrast Checker](https://colourcontrast.cc/e1f70f/2a0ca5)
 
 ## Contributors
 Meet the dedicated contributors who have made this project possible:
