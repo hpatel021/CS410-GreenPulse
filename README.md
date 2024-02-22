@@ -1,5 +1,5 @@
 <div align="center">
-<img src="images/Logo8.png" width="100"/>
+<img src="images/Logo8.png" width="150"/>
 </div>
 
 # Emerald - GreenPulse Project
