@@ -9,6 +9,7 @@
 
 ## Navigation
   -  [Presentations](./presentations.md)
+  -  [Team Bio](#team-bio)
 
 ## Contributors
   -  [Aria Ashby](https://github.com/aria-oducs)
