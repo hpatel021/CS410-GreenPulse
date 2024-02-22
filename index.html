@@ -12,21 +12,54 @@
         </div>
         <ul>
             <li><a href="#home">
-                <button>Home</button></a></li>
+                <button data-target ="home">Home</button></a></li>
             
             <li><a href="#societal">
-                    <button>Societal Problem</button></a></li>
+                    <button data-target ="societal">Problem</button></a></li>
 
             <li><a href="#solution">
-                        <button>Solution</button></a></li>
+                        <button data-target="solution">Solution</button></a></li>
 
             <li><a href="#presentations">
-                <button>Presentation</button></a></li>
+                <button data-target="presentations">Presentations</button></a></li>
 
             <li><a href="#team-bio">
-                <button>Team Bio</button></a></li>
+                <button data-target="team-bio">Team Bio</button></a></li>
         </ul> 
     </nav>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all buttons in the navigation
+            const navButtons = document.querySelectorAll('nav ul li button');
+            
+            // Function to hide all sections
+            function hideAllSections() {
+                document.querySelectorAll('.content-section').forEach(function (section) {
+                    section.style.display = 'none';
+            });
+        }
+            // Function to show the targeted section
+            function showSection(id) {
+                const section = document.getElementById(id);
+                if (section) {
+                    section.style.display = '';
+            }
+        }      
+            // Initialize by hiding all sections except the first one
+            hideAllSections();
+            showSection('home'); // Show 'home' section by default on page load
+      
+            // Add click event listener to each button 
+            navButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    hideAllSections();
+                    showSection(targetId);
+                });
+            });
+        });
+    </script>
 
     <!-- Home Section -->
     <section id="home" class="content-section">
@@ -76,7 +109,7 @@
         mozallowfullscreen="true" 
         webkitallowfullscreen="true">
         </iframe>
-</section>
+    </section>
 
     <!-- Team Bio Section -->
     <section id="team-bio" class="content-section">
@@ -91,6 +124,7 @@
                     <img src="images/member1.jpg" alt="Aria Ashby">
                 </div>
                 <h3>Aria Ashby (she/her)</h3>
+                <h4>Software Developer</h4>
                 <p>Aria is an aspiring software developer with plans to travel the world in the future. 
                     She absolutely loves video games, with some of her favorites being Celeste and ULTRAKILL. 
                     She also has creative outlet hobbies such as video editing and art!</p>
@@ -102,6 +136,7 @@
                     <img src="images/member2.jpg" alt="Dima Bochkarev">
                 </div>
                 <h3>Dima Bochkarev</h3>
+                <h4>Software Developer</h4>
                 <p>Dima is a software developer who aspires to become a game developer.
                     He enjoys playing video games, reading Russian poetry, and playing chess.
                     He traveled to most of western countries and plans to travel the rest of the world too.</p>
@@ -123,6 +158,7 @@
                     <img src="images/member4.jpg" alt="Harsh Patel">
                 </div>
                 <h3>Harsh Patel</h3>
+                <h4>Front-End Developer</h4>
                 <p>Harsh is a student by day, gamer by night. 
                     Volleyball enthusiast and former high school team player. 
                     Balancing books and fun with a smile.</p>
@@ -145,5 +181,6 @@
     <footer>
         CS410 - Team Emerald
     </footer>
+    
 </body>
 </html>
