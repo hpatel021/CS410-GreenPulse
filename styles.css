@@ -168,3 +168,59 @@ footer {
     padding: 10px; /* Add padding for spacing */
     color: #333 /* Brown text color for better readability */
 }
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(2, 116, 2, 0.3); 
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20px; /* Rounded corners to match the navigation buttons */
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #fff; /* White text color for the dropdown */
+    padding: 10px 15px; /* Adjusted padding to match navigation button */
+    font-size: 18px; /* Adjusted font size to match navigation button */
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #00fbffdf;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Typewriter effect for team member roles */
+.team-member h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.6s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+}

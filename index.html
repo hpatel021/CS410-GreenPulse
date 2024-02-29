@@ -20,8 +20,13 @@
             <li><a href="#solution">
                 <button data-target="solution">Solution</button></a></li>
 
-            <li><a href="#presentations">
-                <button data-target="presentations">Presentations</button></a></li>
+            <li class="dropdown">
+                <button class="dropbutton">Category</button>
+                <div class="dropdown-content">
+                    <a href="#presentations" data-target="presentations">Presentation</a>
+                    <a href="#working-draft" data-target="working-draft">Working Draft</a>
+                </div>
+            </li>
 
             <li><a href="#team-bio">
                 <button data-target="team-bio">Team Bio</button></a></li>
@@ -80,6 +85,35 @@
                 showSection('home');
                 BackToHomepage('home');
             });
+
+            // Handle dropdown button clicks
+            const dropdownButtons = document.querySelectorAll('.dropdown-content a');
+            dropdownButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+                    hideAllSections();
+                    showSection(targetId);
+                    BackToHomepage(targetId);
+                });
+            });
+            
+            // Handle "Category" button click to show/hide dropdown content
+            const categoryButton = document.querySelector('.dropbtn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+            
+            categoryButton.addEventListener('click', function () {
+                dropdownContent.classList.toggle('show');
+            });
+            
+            // Close the dropdown if the user clicks outside of it
+            window.addEventListener('click', function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    if (dropdownContent.classList.contains('show')) {
+                        dropdownContent.classList.remove('show');
+                    }
+                }
+            });
         });
     </script>
 
@@ -123,6 +157,7 @@
     <!-- Presentations Section -->
     <section id="presentations" class="content-section">
         <h2>Presentations</h2>
+
         <!-- Embed the iframe referencing team’s Working Draft Feasibility Presentation -->
         <iframe 
         src="https://docs.google.com/presentation/d/e/2PACX-1vSqyYbfnWwcx6cOyKEaZS2FGnSxdF1xdsKvRnnr395AB26TDuv9tcJsGhvo74XtJPCCWa08-7vyiLc9/embed?start=false&loop=false&delayms=3000" 
@@ -131,6 +166,16 @@
         allowfullscreen="true" 
         mozallowfullscreen="true" 
         webkitallowfullscreen="true">
+        </iframe>
+    </section>
+
+    <!-- Working Draft Section -->
+    <section id="working-draft" class="content-section">
+        <h2>Working Draft</h2>
+
+        <!-- Embed the iframe referencing team's Working Draft Doc -->
+        <iframe>
+
         </iframe>
     </section>
 
