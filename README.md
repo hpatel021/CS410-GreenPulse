@@ -14,6 +14,7 @@ The Emerald - GreenPulse project addresses environmental concerns by offering a 
 
 ## Navigation
   - Explore our [Presentations](./presentations.md) for detailed insights into the project.
+  - Access the [Working Draft](./working-draft.md) to stay updated on the evolving aspects of our project.
 
 ## Reference
 For those interested in the technologies we've used, check out these references:
