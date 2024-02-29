@@ -6,7 +6,7 @@
 Welcome to the Emerald - GreenPulse project repository! This `README.md` serves as a guide to help you navigate and understand our project.
     
 ## Project Links
-  - [GitHub Pages](https://hpatel021.github.io/CS410-GreenPulse/)
+  - [Website](https://hpatel021.github.io/CS410-GreenPulse/)
   - [Theme](https://github.com/pages-themes/midnight?tab=readme-ov-file#usage)
 
 ## Overview
