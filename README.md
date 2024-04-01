@@ -2,7 +2,6 @@
 <img src="images/Logo8.png" width="150"/>
 </div>
 
-# Emerald - GreenPulse Project
 Welcome to the Emerald - GreenPulse project repository! This `README.md` serves as a guide to help you navigate and understand our project.
     
 ## Project Links
@@ -14,7 +13,7 @@ The Emerald - GreenPulse project addresses environmental concerns by offering a 
 
 ## Navigation
   - Explore our [Presentations](./presentations.md) for detailed insights into the project.
-  - Access the [Working Draft](./working-draft.md) to stay updated on the evolving aspects of our project.
+  - Access the [Working Draft](./lab-1outline.md) to stay updated on the evolving aspects of our project.
 
 ## Reference
 For those interested in the technologies we've used, check out these references:
