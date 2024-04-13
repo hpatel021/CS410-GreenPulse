@@ -231,6 +231,7 @@ footer {
 
 #references ul {
     list-style-type: none;
+    padding: 0; /* Remove default padding */
 }
 
 #references ul li {
