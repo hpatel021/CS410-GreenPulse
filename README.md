@@ -12,9 +12,10 @@ Welcome to the Emerald - GreenPulse project repository! This `README.md` serves 
 The Emerald - GreenPulse project addresses environmental concerns by offering a sustainable living through the GreenPulse smartphone application.
 
 ## Navigation
-  - Explore our [Presentations](./presentations.md) for detailed insights into the project.
+  - Explore our [Feasibility Presentation](./presentations.md) for detailed insights into the project.
   - Access the [Working Draft](./lab-1outline.md) to stay updated on the evolving aspects of our project.
-
+  - Check out our [Design Prototype](./designPrototype.md) for a visual representation of our project.
+  
 ## Reference
 For those interested in the technologies we've used, check out these references:
   - [HTML](https://www.w3schools.com/html/default.asp)
