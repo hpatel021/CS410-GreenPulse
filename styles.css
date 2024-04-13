@@ -224,36 +224,24 @@ footer {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 255, 255); }
 }
-/* References Section */
+/* References section */
 #references {
-    margin-top: 50px;
-    text-align: left; /* Align text to the left */
-}
-
-#references h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center; /* Center the heading text */
+    margin-top: 20px;
 }
 
 #references ul {
     list-style-type: none;
-    padding: 0;
 }
 
-#references li {
-    margin-bottom: 15px;
+#references ul li {
+    margin-bottom: 10px;
 }
 
-#references li:last-child {
-    margin-bottom: 0;
-}
-
-#references a {
-    color: #007bff; /* Blue color for links */
+#references ul li a {
+    color: #4CAF50;
     text-decoration: none;
 }
 
-#references a:hover {
+#references ul li a:hover {
     text-decoration: underline;
 }
